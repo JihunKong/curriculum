@@ -52,7 +52,7 @@ def generate_curriculum_plan(school_level, grade, weekly_hours, selected_options
     
     try:
         completion = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "당신은 2022 개정 교육과정에 정통한 국어과 교육과정 전문가입니다."},
                 {"role": "user", "content": prompt}
